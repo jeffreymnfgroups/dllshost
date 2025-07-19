@@ -1,5 +1,3 @@
-import React from "react";
-
 const Schedule = () => {
   return (
     <div className="w-full min-h-[85vh] bg-white flex flex-col pt-[66px] items-center justify-center px-4 md:px-0">

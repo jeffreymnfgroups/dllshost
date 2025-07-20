@@ -27,23 +27,23 @@ const Hero = () => {
     amount: "some",
     once: true,
   }}
-  className="flex items-center gap-[7px] cursor-pointer pl-[104px] pr-0 rounded-full py-[13px] relative w-[352px] bg-[#FFF3E0]/50"
+  className="flex items-center gap-[7px] cursor-pointer pl-[104px] pr-0 rounded-full py-[13px] relative w-[352px] bg-primary-100/50"
 >
-  {/* Fixed-position Updates badge */}
-  <div className="rounded-full flex items-center justify-center absolute left-[6px] z-30 bg-[#FFF3E0] py-1 px-2.5">
-    <h4 className="be-vietnam-pro-semibold leading-[21.6px] text-base text-black tracking-[-0.32px]">
-      Updates
+  {/* Fixed-position Trust badge */}
+  <div className="rounded-full flex items-center justify-center absolute left-[6px] z-30 bg-primary-100 py-1 px-2.5">
+    <h4 className="be-vietnam-pro-semibold leading-[21.6px] text-base text-secondary-900 tracking-[-0.32px]">
+      Trust
     </h4>
   </div>
 
   {/* Background animation bar */}
   <div className="absolute left-0 top-0 w-full h-full overflow-hidden rounded-full pointer-events-none">
-    <div className="bg-[#FFF3E0] w-0 group-hover:w-full h-full rounded-full transition-all duration-300" />
+    <div className="bg-primary-100 w-0 group-hover:w-full h-full rounded-full transition-all duration-300" />
   </div>
 
   {/* Always visible headline */}
-  <h4 className="text-[14px] leading-[15.4px] tracking-[-0.14px] font-semibold text-black be-vietnam-pro-medium z-40 transition-all duration-300">
-    We secured 3M Series B round
+  <h4 className="text-[14px] leading-[15.4px] tracking-[-0.14px] font-semibold text-secondary-900 be-vietnam-pro-medium z-40 transition-all duration-300">
+    Trusted by 500+ partners since 2004
   </h4>
 
   {/* Hover-reveal arrow */}
@@ -111,7 +111,7 @@ const Hero = () => {
               amount: "some",
               once: true,
             }}
-            className="be-vietnam-pro-medium text-[#475466] text-[18px] leading-[24.3px] tracking-[-0.54px] md:text-[20px] md:leading-[27px] md:tracking-[-0.6px] text-center md:text-left w-full md:w-[480px]"
+            className="be-vietnam-pro-medium text-secondary-600 text-[18px] leading-[24.3px] tracking-[-0.54px] md:text-[20px] md:leading-[27px] md:tracking-[-0.6px] text-center md:text-left w-full md:w-[480px]"
           >
             White-label or resell a proven VoIP platform with full partner support, generous commissions, and zero headaches.
           </motion.p>
@@ -119,21 +119,27 @@ const Hero = () => {
           <div className="flex flex-row gap-4 mt-4">
             <Link
               to="/schedule"
-              className="text-base leading-[22.4px] font-medium text-white bg-[#F78B16] rounded-lg px-6 py-3 hover:bg-[#E67A0A] transition"
+              className="text-base leading-[22.4px] font-medium text-white bg-primary-500 rounded-lg px-6 py-3 hover:bg-primary-600 transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
               Schedule a Call
             </Link>
             <a
               href="https://jeffreydev.vercel.app/"
-              className="text-base leading-[22.4px] font-medium text-[#F78B16] border border-[#F78B16] rounded-lg px-6 py-3 bg-white hover:bg-[#f5f5f5] transition"
+              className="text-base leading-[22.4px] font-medium text-primary-500 border-2 border-primary-500 rounded-lg px-6 py-3 bg-white hover:bg-primary-50 transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
               Get Partner Packet
             </a>
           </div>
 
           <div className="flex flex-row gap-6 mt-6 items-center">
-            <span className="text-[#0f1728] font-semibold text-[16px]">Since 2004</span>
-            <span className="text-[#0f1728] font-semibold text-[16px]">100% U.S.-based support</span>
+            <span className="text-secondary-900 font-semibold text-[16px] flex items-center gap-2">
+              <span className="w-2 h-2 bg-primary-500 rounded-full"></span>
+              Since 2004
+            </span>
+            <span className="text-secondary-900 font-semibold text-[16px] flex items-center gap-2">
+              <span className="w-2 h-2 bg-primary-500 rounded-full"></span>
+              100% U.S.-based support
+            </span>
           </div>
 
           <motion.div

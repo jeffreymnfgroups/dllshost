@@ -25,7 +25,7 @@ const Footer = () => {
       <a
         href="https://jeffreydev.vercel.app/"
         target="_blank"
-        className="text-base leading-[21.6px] tracking-[-0.48px] be-vietnam-pro-medium text-white bg-[#F78B16] border border-[#F78B16] rounded-lg px-[18px] py-2.5 flex items-center justify-center max-w-max whitespace-nowrap hover:bg-[#E67A0A] transition"
+                    className="text-base leading-[21.6px] tracking-[-0.48px] be-vietnam-pro-medium text-white bg-primary-500 border border-primary-500 rounded-lg px-[18px] py-2.5 flex items-center justify-center max-w-max whitespace-nowrap hover:bg-primary-600 transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
       >
         Get Partner Packet
       </a>

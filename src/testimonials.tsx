@@ -8,37 +8,231 @@ const Testimonials = () => {
   const targetRef = useRef<HTMLDivElement | null>(null);
 
   return (
-    <section className="bg-[#f5f5f5] flex flex-col items-center w-full py-[60px] md:pb-[80px] px-[30px] xl:px-[56px] gap-[60px] md:gap-[80px] relative">
+    <section className="bg-[#FFFF] flex flex-col items-center w-full py-[60px] md:pb-[80px] px-[30px] xl:px-[56px] gap-[60px] md:gap-[80px] relative">
       <div className="w-full flex flex-col gap-[45px] items-center pb-[60px] md:pb-[120px]">
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-            transition: {
-              type: "spring",
-              damping: 40,
-              stiffness: 150,
-              mass: 1,
-              delay: 0.2,
-            },
-          }}
-          viewport={{
-            amount: "some",
-            once: true,
-          }}
-          className="flex flex-col items-center py-8 px-6 bg-white rounded-[16px] shadow-lg max-w-2xl mx-auto"
-        >
-          <h4 className="ibm-plex-mono-semibold uppercase text-[#F78B16] text-[14px] leading-[16px] text-center tracking-[1.2px] mb-4">
-            Partner Testimonial
-          </h4>
-          <p className="text-[24px] md:text-[32px] leading-[1.3] text-center text-[#0f1728] font-medium mb-6">
-            “We switched from a national provider to DLS and never looked back. It’s stable, customizable, and our margins are finally predictable.”
-          </p>
-          <span className="block text-[#a3a6ae] text-[18px] md:text-[20px] text-center font-semibold">
-            — Chicago-based MSP
-          </span>
-        </motion.div>
+        <div className="w-full flex flex-col items-center gap-[15px] md:w-[850px]">
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                type: "spring",
+                damping: 40,
+                stiffness: 150,
+                mass: 1,
+                delay: 0.2,
+              },
+            }}
+            viewport={{
+              amount: "some",
+              once: true,
+            }}
+            className="flex items-center py-2 px-3 bg-[#F78B16] rounded-[11px]"
+          >
+                          <h4 className="ibm-plex-mono-semibold uppercase text-white text-[12px] leading-[13.2px] text-center tracking-[1.2px]">
+              Metrics
+            </h4>
+          </motion.div>
+          <motion.h1
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 0.8,
+                delay: 0.3,
+                ease: [0.44, 0, 0, 1],
+              },
+            }}
+            viewport={{
+              amount: "some",
+              once: true,
+            }}
+            className="w-full sm:w-[669px] poppins-medium text-[40px] leading-[48px] tracking-[-1.2px] md:text-[44px] md:leading-[52.8px] text-center text-[#0f1728] md:w-full"
+          >
+            You can bet on it
+          </motion.h1>
+        </div>
+
+        <div className="w-full flex flex-col md:flex-row items-center justify-center gap-10 md:gap-8">
+          <div className="flex flex-col gap-3 items-center w-full md:w-1/4 xl:w-[280px] md:border-r border-[#F78B16] md:pr-2.5 xl:pr-0">
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  type: "spring",
+                  damping: 40,
+                  stiffness: 160,
+                  mass: 1,
+                  delay: 0.4,
+                },
+              }}
+              viewport={{
+                amount: "some",
+                once: true,
+              }}
+              className="text-[#F78B16] font-medium text-[48px] leading-[48px] md:text-[62px] xl:text-[80px] md:font-semi bold md:leading-[80px] tracking-[-3px]"
+            >
+              18+
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  type: "spring",
+                  damping: 40,
+                  stiffness: 160,
+                  mass: 1,
+                  delay: 0.5,
+                },
+              }}
+              viewport={{
+                amount: "some",
+                once: true,
+              }}
+              className="text-[18px] leading-[24.3px] md:text-[20px] text-center md:leading-[27px] tracking-[-0.5px]"
+            >
+              Years in Business
+            </motion.p>
+          </div>
+          <div className="flex flex-col gap-3 items-center w-full md:w-1/4 xl:w-[280px] md:border-r border-[#F78B16] md:pr-2.5 xl:pr-0">
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  type: "spring",
+                  damping: 40,
+                  stiffness: 160,
+                  mass: 1,
+                  delay: 0.6,
+                },
+              }}
+              viewport={{
+                amount: "some",
+                once: true,
+              }}
+              className="text-[#F78B16] font-medium text-[48px] leading-[48px] md:text-[62px] xl:text-[80px] md:font-semi bold md:leading-[80px] tracking-[-3px]"
+            >
+              30%
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  type: "spring",
+                  damping: 40,
+                  stiffness: 160,
+                  mass: 1,
+                  delay: 0.7,
+                },
+              }}
+              viewport={{
+                amount: "some",
+                once: true,
+              }}
+              className="text-[18px] leading-[24.3px] md:text-[20px] text-center md:leading-[27px] tracking-[-0.5px]"
+            >
+              Partner Margins
+            </motion.p>
+          </div>
+          <div className="flex flex-col gap-3 items-center w-full md:w-1/4 xl:w-[280px] md:border-r border-[#F78B16] md:pr-2.5 xl:pr-0">
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  type: "spring",
+                  damping: 40,
+                  stiffness: 160,
+                  mass: 1,
+                  delay: 0.8,
+                },
+              }}
+              viewport={{
+                amount: "some",
+                once: true,
+              }}
+              className="text-[#F78B16] font-medium text-[48px] leading-[48px] md:text-[62px] xl:text-[80px] md:font-semi bold md:leading-[80px] tracking-[-3px]"
+            >
+              24/7
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  type: "spring",
+                  damping: 40,
+                  stiffness: 160,
+                  mass: 1,
+                  delay: 0.9,
+                },
+              }}
+              viewport={{
+                amount: "some",
+                once: true,
+              }}
+              className="text-[18px] leading-[24.3px] md:text-[20px] text-center md:leading-[27px] tracking-[-0.5px]"
+            >
+              U.S. Support
+            </motion.p>
+          </div>
+          <div className="flex flex-col gap-3 items-center w-full md:w-1/4 xl:w-[280px] md:pr-2.5 xl:pr-0">
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  type: "spring",
+                  damping: 40,
+                  stiffness: 160,
+                  mass: 1,
+                  delay: 1.0,
+                },
+              }}
+              viewport={{
+                amount: "some",
+                once: true,
+              }}
+              className="text-[#F78B16] font-medium text-[48px] leading-[48px] md:text-[62px] xl:text-[80px] md:font-semi bold md:leading-[80px] tracking-[-3px]"
+            >
+              99.99%
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  type: "spring",
+                  damping: 40,
+                  stiffness: 160,
+                  mass: 1,
+                  delay: 1.1,
+                },
+              }}
+              viewport={{
+                amount: "some",
+                once: true,
+              }}
+              className="text-[18px] leading-[24.3px] md:text-[20px] text-center md:leading-[27px] tracking-[-0.5px]"
+            >
+              Uptime SLA
+            </motion.p>
+          </div>
+        </div>
       </div>
 
       <div
@@ -95,7 +289,7 @@ const Testimonials = () => {
       </div>
 
       <Link
-        to="https://jeffreydev.vercel.app/"
+        to="https://www.victorwilliams.me/"
         className="w-full flex items-center justify-center"
       >
         <motion.button

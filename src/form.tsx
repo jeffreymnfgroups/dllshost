@@ -97,21 +97,21 @@ const Form = () => {
           <label className="text-left text-[#0f1728] font-medium">Services Interested In</label>
           <div className="flex flex-col gap-2">
             <label className="flex items-center gap-2">
-              <input type="checkbox" className="accent-[#854dff]" /> White-label VoIP
+              <input type="checkbox" className="accent-[#F78B16]" /> White-label VoIP
             </label>
             <label className="flex items-center gap-2">
-              <input type="checkbox" className="accent-[#854dff]" /> Referral program
+              <input type="checkbox" className="accent-[#F78B16]" /> Referral program
             </label>
             <label className="flex items-center gap-2">
-              <input type="checkbox" className="accent-[#854dff]" /> Managed internet
+              <input type="checkbox" className="accent-[#F78B16]" /> Managed internet
             </label>
             <label className="flex items-center gap-2">
-              <input type="checkbox" className="accent-[#854dff]" /> Integration support
+              <input type="checkbox" className="accent-[#F78B16]" /> Integration support
             </label>
           </div>
           <button
             type="submit"
-            className="text-base leading-[22.4px] text-center font-medium text-white bg-[#854dfc] rounded-lg p-[15px] hover:bg-[#9D71FD] w-full transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            className="text-base leading-[22.4px] text-center font-medium text-white bg-[#F78B16] rounded-lg p-[15px] hover:bg-[#E67A0A] w-full transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             onClick={() => setSubmitted(true)}
           >
             Get Partner Packet

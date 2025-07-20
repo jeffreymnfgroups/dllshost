@@ -10,28 +10,28 @@ const Schedule = () => {
           <input
             type="text"
             placeholder="Your Name"
-            className="border border-[#e5e7eb] rounded-lg px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-[#854dff]"
+            className="border border-[#e5e7eb] rounded-lg px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-[#F78B16]"
             required
           />
           <input
             type="email"
             placeholder="Your Email"
-            className="border border-[#e5e7eb] rounded-lg px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-[#854dff]"
+            className="border border-[#e5e7eb] rounded-lg px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-[#F78B16]"
             required
           />
           <input
             type="tel"
             placeholder="Phone Number (optional)"
-            className="border border-[#e5e7eb] rounded-lg px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-[#854dff]"
+            className="border border-[#e5e7eb] rounded-lg px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-[#F78B16]"
           />
           <textarea
             placeholder="How can we help you?"
-            className="border border-[#e5e7eb] rounded-lg px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-[#854dff] min-h-[100px]"
+            className="border border-[#e5e7eb] rounded-lg px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-[#F78B16] min-h-[100px]"
             required
           />
           <button
             type="submit"
-            className="text-base font-medium text-white bg-[#854dff] rounded-lg px-6 py-3 hover:bg-[#6c2ed9] transition mt-2"
+            className="text-base font-medium text-white bg-[#F78B16] rounded-lg px-6 py-3 hover:bg-[#E67A0A] transition mt-2"
           >
             Submit
           </button>

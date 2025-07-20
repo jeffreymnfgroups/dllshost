@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "./assets/logo.svg";
+import logo from "./assets/logo.png";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
@@ -41,10 +41,9 @@ const Navbar = () => {
         to="/"
         className="flex items-center gap-2.5 cursor-pointer"
       >
-        <img src={logo} alt="DLS Logo" className="w-[50px] h-[50px]" />
-        <h2 className="text-[22px] leading-[24.2px] tracking-[-0.6px] poppins-medium md:hidden lg:block">
-          DLS
-        </h2>
+        {/* Changed logo width to 'w-auto' for better responsiveness or a specific width like 'w-[80px]' if desired */}
+        <img src={logo} alt="DLS Logo" className="h-[30px] w-auto" />
+        {/* Removed the h2 element that displayed "DLS" */}
       </Link>
 
       <div className="md:flex items-center justify-center gap-8 hidden be-vietnam-pro-medium pr-[28px] md:pr-0 md:pl-[50px] lg:pr-[28px] lg:pl-0">
@@ -80,7 +79,7 @@ const Navbar = () => {
       <Link
         to="https://jeffreydev.vercel.app/"
         target="_blank"
-        className="text-base leading-[21.6px] tracking-[-0.48px] be-vietnam-pro-medium text-white bg-[#854dff] border border-[#854dff] rounded-lg px-[18px] py-2.5 md:flex items-center justify-center max-w-max hover:bg-[#6c2ed9] transition"
+        className="text-base leading-[21.6px] tracking-[-0.48px] be-vietnam-pro-medium text-white bg-[#F78B16] border border-[#F78B16] rounded-lg px-[18px] py-2.5 md:flex items-center justify-center max-w-max hover:bg-[#E67A0A] transition"
       >
         Get Partner Packet
       </Link>
@@ -171,9 +170,9 @@ const Navbar = () => {
 
         <Link
           to="/"
-          className={`text-base transition leading-[21.6px] tracking-[-0.48px] be-vietnam-pro-medium text-[#854dff] ${
+          className={`text-base transition leading-[21.6px] tracking-[-0.48px] be-vietnam-pro-medium text-[#F78B16] ${
             navbarVisible ? "open-nav-items" : "close-nav-items"
-          } border border-[#854dff] bg-transparent rounded-lg px-[18px] py-[14px] flex items-center justify-center w-full`}
+          } border border-[#F78B16] bg-transparent rounded-lg px-[18px] py-[14px] flex items-center justify-center w-full`}
         >
           Get Template
         </Link>

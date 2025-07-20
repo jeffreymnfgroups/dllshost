@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import fingerprint from "./assets/fingerprint.svg";
+import TickIcon from "./assets/TickIcon";
 
 const Benefits = () => {
   return (
@@ -50,37 +51,37 @@ const Benefits = () => {
         <div className="flex flex-col md:flex-row gap-[24px] w-full mt-6">
           <div className="flex flex-col gap-4 md:w-1/2">
             <div className="flex items-start gap-3">
-              <span className="text-green-600 text-2xl">✔️</span>
+              <TickIcon className="w-6 h-6 flex-shrink-0" />
               <span><b>White-label or referral model</b> — your choice</span>
             </div>
             <div className="flex items-start gap-3">
-              <span className="text-green-600 text-2xl">✔️</span>
+              <TickIcon className="w-6 h-6 flex-shrink-0" />
               <span><b>30% recurring commission structure</b></span>
             </div>
             <div className="flex items-start gap-3">
-              <span className="text-green-600 text-2xl">✔️</span>
+              <TickIcon className="w-6 h-6 flex-shrink-0" />
               <span><b>Simple pricing</b> with transparent billing</span>
             </div>
             <div className="flex items-start gap-3">
-              <span className="text-green-600 text-2xl">✔️</span>
+              <TickIcon className="w-6 h-6 flex-shrink-0" />
               <span><b>100% U.S.-based support</b> (we answer the phones)</span>
             </div>
           </div>
           <div className="flex flex-col gap-4 md:w-1/2">
             <div className="flex items-start gap-3">
-              <span className="text-green-600 text-2xl">✔️</span>
+              <TickIcon className="w-6 h-6 flex-shrink-0" />
               <span><b>Real-time access</b> to provisioning tools and reporting</span>
             </div>
             <div className="flex items-start gap-3">
-              <span className="text-green-600 text-2xl">✔️</span>
+              <TickIcon className="w-6 h-6 flex-shrink-0" />
               <span><b>Fast provisioning</b>, flexible configuration options</span>
             </div>
             <div className="flex items-start gap-3">
-              <span className="text-green-600 text-2xl">✔️</span>
+              <TickIcon className="w-6 h-6 flex-shrink-0" />
               <span><b>BYOD-friendly</b> or phones shipped ready-to-go</span>
             </div>
             <div className="flex items-start gap-3">
-              <span className="text-green-600 text-2xl">✔️</span>
+              <TickIcon className="w-6 h-6 flex-shrink-0" />
               <span><b>Optional managed internet, firewall, or failover options</b></span>
             </div>
           </div>
@@ -105,7 +106,7 @@ const Benefits = () => {
             amount: "some",
             once: true,
           }}
-          className="flex flex-col p-8 bg-[#bdff1c] rounded-[24px] items-start justify-start h-full gap-16 md:gap-10 sm:h-[274px] md:h-[435px] lg:h-[348px] md:w-1/3"
+          className="flex flex-col p-8 bg-[#FFF3E0] rounded-[24px] items-start justify-start h-full gap-16 md:gap-10 sm:h-[274px] md:h-[435px] lg:h-[348px] md:w-1/3"
         >
           <img src={fingerprint} alt="" className="w-16 h-16" />
           <div className="w-full flex flex-col items-start gap-2">
@@ -135,7 +136,7 @@ const Benefits = () => {
             amount: "some",
             once: true,
           }}
-          className="flex flex-col p-8 bg-[#bdff1c] rounded-[24px] items-start justify-start h-full gap-16 md:gap-10 sm:h-[274px] md:h-[435px] lg:h-[348px] md:w-1/3"
+          className="flex flex-col p-8 bg-[#FFF3E0] rounded-[24px] items-start justify-start h-full gap-16 md:gap-10 sm:h-[274px] md:h-[435px] lg:h-[348px] md:w-1/3"
         >
           <img src={fingerprint} alt="" className="w-16 h-16" />
           <div className="w-full flex flex-col items-start gap-2">
@@ -166,7 +167,7 @@ const Benefits = () => {
             amount: "some",
             once: true,
           }}
-          className="flex flex-col p-8 bg-[#bdff1c] rounded-[24px] items-start justify-start h-full gap-16 md:gap-10 sm:h-[274px] md:h-[435px] lg:h-[348px] md:w-1/3"
+          className="flex flex-col p-8 bg-[#FFF3E0] rounded-[24px] items-start justify-start h-full gap-16 md:gap-10 sm:h-[274px] md:h-[435px] lg:h-[348px] md:w-1/3"
         >
           <img src={fingerprint} alt="" className="w-16 h-16" />
           <div className="w-full flex flex-col items-start gap-2">

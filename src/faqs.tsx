@@ -23,7 +23,7 @@ const Faqs = () => {
             amount: "some",
             once: true,
           }}
-          className="flex items-center py-2 px-3 bg-[#bdff1c] rounded-[11px]"
+          className="flex items-center py-2 px-3 bg-[#FFF3E0] rounded-[11px]"
         >
           <h4 className="ibm-plex-mono-semibold text-black text-[12px] leading-[13.2px] text-center tracking-[1.2px]">
             FAQs
@@ -71,7 +71,7 @@ const Faqs = () => {
           amount: "some",
           once: true,
         }}
-        className="bg-[#f5f5f5] rounded-[20px] shadow-lg border border-[#e5e7eb] flex justify-center mx-auto w-auto max-w-max"
+        className="bg-[#f5f5f5] rounded-[20px] shadow-lg border border-[#F78B16] flex justify-center mx-auto w-auto max-w-max"
         >
   <div className="px-6 py-6">
   <Accordion faqs={[
@@ -142,7 +142,7 @@ const Faqs = () => {
           amount: "some",
           once: true,
         }}
-        className="flex flex-col xl:flex-row items-center bg-[#bdff1c] w-full sm:w-[622px] rounded-[24px] overflow-hidden md:w-full xl:w-full xl:h-[480px]"
+        className="flex flex-col xl:flex-row items-center bg-[#FFF3E0] w-full sm:w-[622px] rounded-[24px] overflow-hidden md:w-full xl:w-full xl:h-[480px]"
       >
         <div className="flex flex-col gap-12 items-start w-full xl:w-1/2 px-10 md:px-16 pt-[60px] pb-[60px]">
           <h1 className="poppins-medium text-[40px] leading-[44px] tracking-[-1px] text-[#0f1728] md:text-[52px] md:leading-[57.2px]">
@@ -168,7 +168,7 @@ const Faqs = () => {
                 amount: "some",
                 once: true,
               }}
-              className="text-base leading-[21.6px] tracking-[-0.48px] be-vietnam-pro-medium text-[#fff] bg-[#854dff] rounded-full px-[18px] md:px-[22px] py-[14px] flex items-center justify-center min-w-full md:min-w-min"
+              className="text-base leading-[21.6px] tracking-[-0.48px] be-vietnam-pro-medium text-[#fff] bg-[#F78B16] rounded-full px-[18px] md:px-[22px] py-[14px] flex items-center justify-center min-w-full md:min-w-min"
             >
               Get Partner Packet
             </motion.button>

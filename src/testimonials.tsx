@@ -29,7 +29,7 @@ const Testimonials = () => {
           }}
           className="flex flex-col items-center py-8 px-6 bg-white rounded-[16px] shadow-lg max-w-2xl mx-auto"
         >
-          <h4 className="ibm-plex-mono-semibold uppercase text-[#854dff] text-[14px] leading-[16px] text-center tracking-[1.2px] mb-4">
+          <h4 className="ibm-plex-mono-semibold uppercase text-[#F78B16] text-[14px] leading-[16px] text-center tracking-[1.2px] mb-4">
             Partner Testimonial
           </h4>
           <p className="text-[24px] md:text-[32px] leading-[1.3] text-center text-[#0f1728] font-medium mb-6">
@@ -113,7 +113,7 @@ const Testimonials = () => {
             amount: "some",
             once: true,
           }}
-          className="text-base mt-[-20px] leading-[21.6px] tracking-[-0.48px] be-vietnam-pro-medium text-[#854dff] border border-[#854dff] bg-transparent rounded-full px-[18px] py-[14px] md:px-5 flex items-center justify-center w-full md:max-w-max"
+          className="text-base mt-[-20px] leading-[21.6px] tracking-[-0.48px] be-vietnam-pro-medium text-[#F78B16] border border-[#F78B16] bg-transparent rounded-full px-[18px] py-[14px] md:px-5 flex items-center justify-center w-full md:max-w-max"
         >
           Read all stories
         </motion.button>

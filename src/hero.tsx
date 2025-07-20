@@ -10,45 +10,50 @@ const Hero = () => {
     <section className="mt-[35px] pt-[99px] md:pt-[101px] flex items-center flex-col justify-center gap-40 w-full px-5 md:px-16 xl:pl-[152px] xl:pr-[120px] pb-[264px] bg-[#f8f8f8] relative overflow-hidden">
       <div className="flex items-center flex-col xl:flex-row justify-center gap-10 md:gap-20 w-full relative">
         <div className="w-full flex flex-col items-center justify-center gap-6 md:items-start relative">
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: {
-                type: "spring",
-                damping: 30,
-                stiffness: 180,
-                mass: 1,
-                delay: 0.2,
-              },
-            }}
-            viewport={{
-              amount: "some",
-              once: true,
-            }}
-            className="pr-0 flex items-center justify-start gap-[7px] cursor-pointer pl-[104px] rounded-full py-[13px] relative group w-[352px] bg -[#eaffb9]/50"
-          >
-            <div className="rounded-full flex items-center justify-center absolute md:left-[6px] left-[40%] ri ght-0 max-w-min mx-auto group-hover:left-[6px] group-hover:rig ht-auto duration-300 transition-all z-30 bg-[#bdff1c] py-1 px-2.5">
-              <h4 className="be-vietnam-pro-semibold leading-[21.6px] text-base text-black tracking-[-0.32px]">
-                Updates
-              </h4>
-            </div>
+        <motion.div
+  initial={{ opacity: 0, y: 10 }}
+  whileInView={{
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      damping: 30,
+      stiffness: 180,
+      mass: 1,
+      delay: 0.2,
+    },
+  }}
+  viewport={{
+    amount: "some",
+    once: true,
+  }}
+  className="flex items-center gap-[7px] cursor-pointer pl-[104px] pr-0 rounded-full py-[13px] relative w-[352px] bg-[#FFF3E0]/50"
+>
+  {/* Fixed-position Updates badge */}
+  <div className="rounded-full flex items-center justify-center absolute left-[6px] z-30 bg-[#FFF3E0] py-1 px-2.5">
+    <h4 className="be-vietnam-pro-semibold leading-[21.6px] text-base text-black tracking-[-0.32px]">
+      Updates
+    </h4>
+  </div>
 
-            <div className="absolute left-[-1px] bord er top-[-0.5px] w-[352px] h-[43px] overflow-hidden mr-0  rounded-full">
-              <div className="bg-[#eaffb9] w-[0.01px] w -full h-[43px] rounded-full absolute top-[0.1px] le ft-[-920px] group-hover:w-full left-[1px] transition-all !duration-300"></div>
-            </div>
+  {/* Background animation bar */}
+  <div className="absolute left-0 top-0 w-full h-full overflow-hidden rounded-full pointer-events-none">
+    <div className="bg-[#FFF3E0] w-0 group-hover:w-full h-full rounded-full transition-all duration-300" />
+  </div>
 
-            <h4 className="text-[14px] leading-[15.4px] tracking-[-0.14px] font-semibold text-transparent  group-hover:text-black transition-all z-40 be-vietnam-pro-medium duration-300">
-              We secured 3M Series B round
-            </h4>
+  {/* Always visible headline */}
+  <h4 className="text-[14px] leading-[15.4px] tracking-[-0.14px] font-semibold text-black be-vietnam-pro-medium z-40 transition-all duration-300">
+    We secured 3M Series B round
+  </h4>
 
-            <img
-              src={arrow}
-              alt=""
-              className="w-3 h-3 z-40 opacity-0 group-hover:opacity-100 duration-300"
-            />
-          </motion.div>
+  {/* Hover-reveal arrow */}
+  <img
+    src={arrow}
+    alt=""
+    className="w-3 h-3 z-40 opacity-0 group-hover:opacity-100 duration-300"
+  />
+</motion.div>
+
 
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
@@ -86,7 +91,7 @@ const Hero = () => {
               amount: "some",
               once: true,
             }}
-            src="https://framerusercontent.com/images/aTjtJJGxuy3avHrtmudaw8F06g.png?scale-down-to=512"
+            src="/src/assets/strip.png"
             alt=""
             className="z-10 absolute w-[186px] top-[84px] left-[-16px] hidden md:block"
           />
@@ -114,13 +119,13 @@ const Hero = () => {
           <div className="flex flex-row gap-4 mt-4">
             <Link
               to="/schedule"
-              className="text-base leading-[22.4px] font-medium text-white bg-[#854dff] rounded-lg px-6 py-3 hover:bg-[#6c2ed9] transition"
+              className="text-base leading-[22.4px] font-medium text-white bg-[#F78B16] rounded-lg px-6 py-3 hover:bg-[#E67A0A] transition"
             >
               Schedule a Call
             </Link>
             <a
               href="https://jeffreydev.vercel.app/"
-              className="text-base leading-[22.4px] font-medium text-[#854dff] border border-[#854dff] rounded-lg px-6 py-3 bg-white hover:bg-[#f5f5f5] transition"
+              className="text-base leading-[22.4px] font-medium text-[#F78B16] border border-[#F78B16] rounded-lg px-6 py-3 bg-white hover:bg-[#f5f5f5] transition"
             >
               Get Partner Packet
             </a>

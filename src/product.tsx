@@ -70,7 +70,7 @@ const Product = () => {
             amount: "some",
             once: true,
           }}
-          className="flex items-center py-2 px-3 bg-[#bdff1c] rounded-[11px]"
+          className="flex items-center py-2 px-3 bg-[#F78B16] rounded-[11px]"
         >
           <h4 className="ibm-plex-mono-semibold uppercase text-black text-[12px] leading-[13.2px] text-center tracking-[1.2px]">
             Problem / Solution
@@ -140,7 +140,7 @@ const Product = () => {
         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
           {partnerBenefits.map((benefit, idx) => (
             <li key={idx} className="flex items-start gap-3 text-[18px] text-[#222]">
-              <FaCheckCircle className="text-[#bdff1c] mt-1 min-w-[22px]" size={22} />
+                              <FaCheckCircle className="text-[#F78B16] mt-1 min-w-[22px]" size={22} />
               <span className="font-medium">{benefit}</span>
             </li>
           ))}
@@ -172,7 +172,7 @@ const Product = () => {
           {partnerTypes.map((type, idx) => (
             <div key={idx} className="bg-white rounded-2xl shadow-lg border border-[#e5e7eb] p-8 flex flex-col items-center transition-transform hover:-translate-y-2 hover:shadow-2xl group">
               <img src={type.icon} alt={type.title} className="w-16 h-16 mb-4" />
-              <h3 className="font-bold text-lg mb-2 group-hover:text-[#854dff] transition">{type.title}</h3>
+                              <h3 className="font-bold text-lg mb-2 group-hover:text-[#F78B16] transition">{type.title}</h3>
               <p className="text-center text-sm text-[#475466]">{type.desc}</p>
             </div>
           ))}
